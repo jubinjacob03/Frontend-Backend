@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Custom Material Theme */
+:root {
+    --primary-color: #1976d2;
+    --accent-color: #4fc3f7;
+    --warn-color: #ff5252;
+    --background-color: #f8f9fa;
+    --surface-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-color);
+    color: #2d3436;
+}
+
+/* Custom Material Overrides */
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 16px !important;
+}
+
+button {
+    border-radius: 6rem !important;
+}
+
+.mat-mdc-button:not(:disabled) {
+    border-radius: 8px !important;
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mat-mdc-raised-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom Snackbars */
+.success-snackbar {
+    --mdc-snackbar-container-color: #00c853 !important;
+    --mat-mdc-snack-bar-button-color: white !important;
+}
+
+.error-snackbar {
+    --mdc-snackbar-container-color: #ff5252 !important;
+}
